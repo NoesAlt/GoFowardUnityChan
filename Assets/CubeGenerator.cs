@@ -74,13 +74,7 @@ public class CubeGenerator : MonoBehaviour {
             this.span = this.offsetX + this.spaceX * n;
         }
     }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        //キューブが地面とぶつかるあるいはキューブ同士がぶつかるとSEがなる
-        if (other.gameObject.tag == "CubeTag" || other.gameObject.tag == "GroundTag")
-        {
-            GetComponent<AudioSource>().Play();
-        }
+    
     }
      
-}
+

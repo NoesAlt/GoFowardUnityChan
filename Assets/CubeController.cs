@@ -29,10 +29,12 @@ public class CubeController : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D other)
     {
         //キューブが地面とぶつかるあるいはキューブ同士がぶつかるとSEがなる
-        if (other.gameObject.tag == "CubeTag" || other.gameObject.tag == "GroundTag")
+        if (other.gameObject.tag == "GroundTag" || other.gameObject.tag == "CubeTag")
         {
             GetComponent<AudioSource>().Play();
+
         }
+
     }
 
 }
